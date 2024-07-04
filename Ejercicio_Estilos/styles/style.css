@@ -1,0 +1,98 @@
+/*Estilos de CSS.*/
+body {
+    background-color:rgb(245, 174, 203);
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/*Agregar una fuente externa*/
+h2{
+    color:rgb(62, 125, 243);
+    font-family: "Concert One", cursive;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/*Sin la coma indico que los estilos se aplican en los anchor que viven en la lista*/
+li a{
+    background-color:rgb(250, 71, 161);
+}
+
+/*Con la coma indicio que los estilos se aplican a todos los elementos que yo llamo*/
+li, a{
+    color:aqua;
+}
+
+/* Claes y ID */
+.sections{
+    background-color:rgb(248, 217, 228);
+    color:darkmagenta;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+.main{
+    background-color:rgb(199, 255, 236);
+}
+
+#section--2{
+    color: slateblue;
+}
+
+/*Agregamos el estilo a los párrafos que viven dentro del elemento con el id="section--2"
+#section--2 p{
+    color: darkseagreen;
+}*/
+
+
+/*Agregamos estilos punicos al parrafo que vive en el div 2, pero solo se agrega al párrafo indicado con la class="parrafo--2"*/
+.parrafo--2{
+    color: crimson;
+}
+
+#section--5{
+    background-image: url('../assets/pngtree-working-cat-png-image_8661191.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Width para definir el ancho de una imagen y heght para definir en alto de un elemento*/
+#cat--developer {
+    width: 100px;
+    height: 100px;
+}
+
+/*border, define el estilo de los bordes*/
+/*margin y padding. Poedmos definirlos de manera individual utilizando las propiedades
+-top. arriba
+-bottom. abajo
+-left. izquierda
+-right. derecha*/
+
+.main--section6 {
+    border-style: solid;
+    border-color:brown;
+    border-width: 10px;
+    border-radius: 8px;
+}
+
+.gatuna{
+    border-style: solid;
+    border-color: blueviolet ;
+    border-width: 10px;
+    border-radius: 12px;
+    width: 250px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 10px;
+    /*Podemos definir las medidas de cada lado, sigiuendo el sentido de las manecillas del reloj 
+    margin: 30px 10px 5px 50px;*/
+    /*Podemos definir las medidas de arriba y abajo, derecha e izquierda de la siguiente manera:
+    margin: 20px 10px;*/
+    padding: 10px 15px;
+}

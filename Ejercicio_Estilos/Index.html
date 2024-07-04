@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Introducción</title>
+    <!--Estilos externos desde na hoja de CSS, <link> nos permite utilizar recursos desde otro documento-->
+    <link rel="stylesheet" href="./styles/style.css" >
+
+    <!--Estilos mediante etiqueta style
+    Aquí especifico que el indicador h2 es lo que tomará el estilo-->
+    <style>
+        h2 {color:chocolate;
+        }
+    </style>
+    <!--Agregar fuente externa con google font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Estilos en CSS. Podemos agregar de 3 manera
+    1. Estilo en línea dentro del elemento con el archivo style
+    2. Mediante etiqueta style, dentro de la etiqueta <head> agrego la etiqueta <style></style>
+    3. Hoja externa CSS, linkeando (<link>) a una hoja externa-->
+    
+   <!--Agregando estilo en línea <h1>-->
+    <h1 style="color:deeppink">Introducción a CSS</h1>
+    <h2>Generation MX -CH43</h2>
+   <!-- <h2>Segundo H2</h2> -->
+
+    <!--Lista desordenada que me servirá como menú de opciones-->
+    <ul>
+        <li>
+            <a href="https://mexico.generation.org" target="_blank"> Sitio oficial de GenMx</a>
+        </li>
+        <li> 
+            <a href="https://www.w3schools.com/css/css_intro.asp">Sitio w3schools - CSS</a> 
+        </li>
+        <li> 
+            <a href="">Ir a la última sección</a>
+        </li>
+    </ul>
+   
+    <!--Sección 1-->
+    <div class="sections">
+        <h3>Sección 1</h3>
+        <p>Párrafo 1</p>
+    </div>
+
+     <!--Sección 2-->
+     <div class="sections" id="section--2">
+        <h3>Sección 2</h3>
+        <p class="parrafo--2">Párrafo 2</p>
+        <p>Subpárrafo</p>
+    </div>
+
+     <!--Sección 3-->
+     <div class="sections">
+        <h3>Sección 3</h3>
+        <p>Párrafo 3</p>
+    </div>
+
+     <!--Sección 4-->
+     <div class="main">
+        <h3>Sección 4</h3>
+        <p>Párrafo 4</p>
+    </div>
+     <!--Sección 5-->
+     <div class="main" id="section--5">
+        <h3>Sección 5</h3>
+        <p>Párrafo 5</p>
+    </div>
+     <!--Sección 6-->
+     <div class="main--section6">
+        <div class="gatuna">
+            <img src="./assets/pngtree-working-cat-png-image_8661191.png" alt="cat developer IMG" id="cat--developer">
+        </div>
+        <div class="gatuna">
+            <h4>Gatito programador</h4>
+            <p>Mascota de la CH43</p>
+        </div>
+    </div>
+
+
+
+    
+    
+  
+</body>
+</html>

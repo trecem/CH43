@@ -1,0 +1,29 @@
+:root {
+    --bg-color: #171F26;
+    --dark-primary: #3B4E59;
+    --dark-secondary: #4C6473;
+    --light-primary: #BACBD9;
+    --light-secondary: #7693A6;
+    --font-primary: Verdana, Geneva, Tahoma, sans-serif;
+    --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Variables para mi paleta de colores y la fuente*/
+:root {
+    --bg-color: #171F26;
+    --dark-primary: #3B4E59;
+    --dark-secondary: #4C6473;
+    --light-primary: #BACBD9;
+    --light-secondary: #7693A6;
+    --font-primary: Verdana, Geneva, Tahoma, sans-serif;
+    --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    /*Mando a llamar la variable correspondiente al color guardado*/
+    background-color: var(--bg-color);
+    color: #BACBD9;
+    font-family: var(--font-primary);
+}
+.position {
+    background-color: var(--dark-secondary);
+    color: var(--light-primary);
+}

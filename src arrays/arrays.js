@@ -52,3 +52,71 @@ console.log(ch43);
 ch43.push('brandon');
 console.log(ch43);
 
+// --- unshift(); agregar un nuevo elemento al incio del Array
+ch43.unshift('alan');
+console.log(ch43);
+
+// -- shift(; eliminar el primer elemento)
+ch43.shift();
+console.log(ch43);
+
+// --- slice(); recupera todos los elementos a partir del índice proporcionado
+let arraySlide = ch43.slice(16);
+console.log(arraySlide);
+
+// --- at(); recupera el elemento con el índice dado
+console.log(ch43.at(2));
+
+// --- Agregando un nuevo elemento al inicio de mi Array, para poder mostrar otro método
+ch43.unshift('Zhaid');
+console.log(ch43);
+
+// --- sort(); ordena un Array de manera ascendente tomando como referencia la tabla ASCII
+ch43.sort();
+console.log(ch43);
+
+// --- reverse(); invierte el orden del Array
+ch43.reverse();
+console.log(ch43);
+
+// --- indexOf(); me devuelve el índice del primer valor (elemento) encontrado en un array
+let indiceElemento = ch43.indexOf('cristian');
+console.log(indiceElemento);
+
+let indiceElemento2 = ch43.indexOf('zhaid');
+console.log(indiceElemento2); //-1 no existe el elemento dentro del Array
+
+// --- forEach(); me devuelve todos los elementos del Array. Itera sobre cada elemento y lo imprime uno por uno.
+ch43.forEach((developers) => console.log(developers));
+
+// --- map(); crea un nuevo Array con los resultados de la llamada a la función indicada, aplicado a cada uno de los elementos
+const developers = ch43.map((developers) => `Hola ${developers}`); 
+console.log(developers);
+
+/**** Arrays multidimensionales ****/
+const comidas = ['Tamalito de chipilin', 'Cochinita', 'Lechón', 'Tacos envenenados', 'Guajolota', 'Torta ahogada', 'Carne asada', 'Machetes', 'Enchiladas queretanas', 'Tacos de canasta'];
+
+const estados = ['Cdmx', 'Zacatecas', 'Tabasco', 'Jalisco', 'Chihuahua', 'EdoMex', 'Yucatán', 'Queretaro', 'Tlaxcala', 'Quintana Roo'];
+
+const menu = [comidas, estados];
+console.log(menu); // Array de dos dimensiones 
+
+let shopping2 = [
+    ['pan', 'leche', 'queso','crema'],
+    ['verduras', 'frutas','lacteos'],
+    ['congelados', 'mariscos', 'postres']
+];
+
+console.log(shopping2);
+
+// Mandando a llamar un elemento de array multidimencional
+let comida1 = (menu[0][1]);
+console.log(comida1); // Output cochinita
+
+let estado1 = (menu[1][6]);
+console.log(estado1); // Output Yucatán
+
+//Manipulando Array multidimensionales
+let producto = `El producto ${shopping2[0][1]} pertenece a la categoría de ${shopping2[1][2]}`;
+console.log(producto);
+
